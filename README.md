@@ -1,6 +1,6 @@
 # CRUD-приложение Monitor Sensor
 
-# Стек: Java 17, Spring Boot, Spring Security, Hibernate. В системе все данные хранятся в БД (PostgreSQL).
+# Стек: Java 17, Spring Boot, Spring Security (JWT), Hibernate. В системе все данные хранятся в БД (PostgreSQL).
 Сущность датчиков включает в себя:
 - Название датчика
 - Модель

@@ -6,9 +6,16 @@ spring:
     password: root
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/postgres
+
   jpa:
     hibernate:
       ddl-auto: create-drop
+
+  flyway:
+    enabled: true
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
 
 security:
   allow-credentials: true

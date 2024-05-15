@@ -21,7 +21,7 @@ public class UserController {
     private final UserMapper userMapper;
     private final TokenProvider tokenProvider;
 
-    @PostMapping
+    @PostMapping("/registration")
     public User registration(@RequestBody RegistrationUserDto dto) {
         return userService.add(userMapper.registrationUserDtoToUser(dto));
     }

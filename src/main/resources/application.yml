@@ -2,20 +2,16 @@ spring:
   application:
     name: Monitor-Sensors
   datasource:
-    username: postgres
-    password: root
+    username: ${spring.datasource.username}
+    password: ${spring.datasource.password}
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: ${spring.datasource.driver-class-name}
 
   jpa:
     hibernate:
       ddl-auto: create-drop
 
-  flyway:
-    enabled: true
-    url: ${spring.datasource.url}
-    user: ${spring.datasource.username}
-    password: ${spring.datasource.password}
+
 
 security:
   allow-credentials: true
